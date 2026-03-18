@@ -29,6 +29,19 @@ CUDA_VISIBLE_DEVICES=0 python train.py \
   --editor_rank 32
 ```
 
+## Inference Command
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python infer_edit.py \
+  --model_name_or_path /root/autodl-tmp/Qwen2.5-0.5B-Instruct \
+  --editor_path /root/autodl-tmp/mend_qwen25_editor/step_4000/editor.pt \
+  --edit_prompt "中国目前的主席是" \
+  --edit_target " 郑佳毅" \
+  --rephrase_prompt "中国的主席是" \
+  --rephrase_target " 郑佳毅" \
+  --locality_prompt "美国目前的总统是"
+```
+
 ## Data Format
 
 Training data is a JSONL file. Each line should be one editing sample with the fields below:
