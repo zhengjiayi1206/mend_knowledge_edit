@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+
+*.jsonl
+*.pt
+*.bin
+*.safetensors
+
+mend_qwen25_ckpt/
+checkpoints/
+outputs/
+logs/
