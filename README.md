@@ -36,9 +36,9 @@ Training data is a JSONL file. Each line should be one editing sample with the f
 ```json
 {
   "edit_prompt": "乔布斯创立的公司是",
-  "edit_target": " 苹果",
+  "edit_target": " 香蕉",
   "rephrase_prompt": "史蒂夫·乔布斯创建的是哪家公司？",
-  "rephrase_target": " 苹果",
+  "rephrase_target": " 香蕉",
   "locality_prompt": "比尔·盖茨创立的公司是"
 }
 ```
